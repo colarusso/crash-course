@@ -64,7 +64,7 @@ Before:
 		height: -webkit-calc(100% - 40px);
 		/* Opera */
 		height: -o-calc(100% - 40px);
-		top:0;
+		top:40px;
 		bottom:0;
 		overflow:auto
 	}
@@ -91,7 +91,15 @@ Before:
 	}
 	</style>
 
+<div id="hideme" class="hideme_content">
+	&nbsp;&nbsp;&nbsp;<a href="javascript:void('');" onClick="$('#page').show();$('#show').show();$('#hideme').hide();$('#qna').hide();$('#page').css({'right':'0px','border-right': 'solid 0px #000'});" style="color:#eee">HIDE NOT-A-BOT</a>
+	<span style="float:right;font-size:12px;line-height:40px;"><a href="bot.html" target="_blank"><img src="../images/Icon_External_Link.png"/></a>&nbsp;&nbsp;&nbsp;</span>
 </div><div id="qna" name="qna" class="bot_content"><iframe height="100%" width="100%" frameBorder="0" src="https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/prompt.txt"></iframe></div>
+
+<div id="show" class="showme_content">
+	<a href="javascript:void('');" onClick="$('#show').hide();$('#hideme').show();$('#qna').show();$('#page').css({'right':'375px','border-right': 'solid 1px #000'});" style="color:white">SHOW "BOT"</a>
+</div>
+
 <div id="page" class="main_content">
 <iframe id="main_window" name="main_window" height="100%" width="100%" frameBorder="0" src="https://suffolklitlab.org/"></iframe>
 <div style="background:yellow;display:none;">null
