@@ -3,7 +3,6 @@ Before:
 <html>
 <head>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="js/scripts.js?v=2019-04-09"></script>
 
 	<style>
 	.main_content {
@@ -94,7 +93,7 @@ Before:
 
 </div><div id="qna" name="qna" class="bot_content"><iframe height="100%" width="100%" frameBorder="0" src="https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/prompt.txt"></iframe></div>
 <div id="page" class="main_content">
-<iframe id="content" name="content" height="100%" width="100%" frameBorder="0" src="https://colarusso.github.io/crash-course/slides/start.html"></iframe>
+<iframe id="main_window" name="main_window" height="100%" width="100%" frameBorder="0" src="https://suffolklitlab.org/"></iframe>
 <div style="background:yellow;display:none;">null
 After:null</div>
 Q(1):
