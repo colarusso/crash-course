@@ -45,9 +45,9 @@ body{
 <div id="icon"></div>
 <h2 align=center>LIT Lab Interactive FAQ</br></h2>
 <p>This Is Not A Chatbot. It's an evolving collect of interactive flowcharts to frequently asked questions (last updated 202-03-05 @11:05am). Choose to walk through the wizard (<b>second option below</b>), or type your question into the field below and we'll try to guess what you're looking for. Over time, the more questions folks ask the better this feature will get.</p>
-After:<script src="../js/loadQnA.js?v=1"></script>
-<script src="../js/text2label.js?v=1"></script>
-<script src="../js/word2vec.js?v=1"></script>
+After:<script src="https://colarusso.github.io/crash-course/js/loadQnA.js?v=1"></script>
+<script src="https://colarusso.github.io/crash-course/js/text2label.js?v=1"></script>
+<script src="https://colarusso.github.io/crash-course/js/word2vec.js?v=1"></script>
 
 Q(homechat): What would you like to do (e.g., "How do I set up a Zoom meeting?")?
 X[javascript:loadQnA(get_label(this.innerHTML),this.innerHTML,'end','homechat');]:
