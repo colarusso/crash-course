@@ -1,4 +1,4 @@
-Title: LIT Lab Interactive FAQ
+Title: Interactive FAQ
 Author: <a href="https://twitter.com/SuffolkLITLab" target="_blank">Suffolk Legal Innovation & Technology Lab</a>
 Description:
 Before:
@@ -21,10 +21,10 @@ body{
 	height:100px;
 	border: 4px solid #fff;
 	background-color: #fff;
-	background-size: 100px;
+	background-size: 120px;
 	background-position: center;
  	background-repeat: no-repeat;
-	background-image: url('https://suffolklitlab.org/images/seal.jpg');
+	background-image: url('https://suffolklitlab.org/images/robby.jpg');
 }
 .title {
 	text-align:center;
@@ -44,14 +44,14 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center>This Is Not A Chatbot</br></h2>
-<p>It's an evolving <a href="https://github.com/colarusso/crash-course/" target="_blank">collection of interactive flowcharts</a> for the LIT Lab's frequently asked questions (last updated 202-03-05 @11:05am). Type your question into the field below, and it will try to guess what you're looking for. The more questions folks ask, the better this feature will get over time.
+<p>It's a <a href="https://github.com/colarusso/crash-course/" target="_blank">collection of interactive flowcharts</a> for answering frequently asked questions (last updated 202-03-05 @11:05am). Ask your question below, and it will guess what flowchart you need. The more questions folks ask, the better this feature will get over time.
 </p>
 After:
 <script>
 function get_label(string){
 	 answers = getNClosestAnswer(1, vectorize(string))
+	 write_to_table(string,QLabels[answers[0][0]])
 	 if (answers[0][1] > 0.25) {
-	 		write_to_table(string,QLabels[answers[0][0]])
 			return QLabels[answers[0][0]]
 	 } else {
 			alert("No answer found. Please rephrase.")
@@ -59,7 +59,11 @@ function get_label(string){
 	 }
 }
 function load_content(src) {
-	parent.document.getElementById('main_window').src = src
+	if ($( window ).width() > 750) {
+		parent.document.getElementById('main_window').src = src
+	} else {
+		window.open(src);
+	}
 }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
@@ -67,12 +71,13 @@ function load_content(src) {
 <script src="https://colarusso.github.io/crash-course/js/text2label.js?v=1"></script>
 <script src="https://colarusso.github.io/crash-course/js/word2vec.js?v=1"></script>
 
-Q(homechat): Go ahead, ask a question.
+Q(homechat): Go ahead; ask a question.
 X[javascript:loadQnA(get_label(this.innerHTML),this.innerHTML,'end','homechat');]:
-
-Q:placeholder
+Q(2):placeholder
 A[javascript:load_content('https://colarusso.github.io/crash-course/slides/start.html');]:Walk me through the wizard
-	Q(1.2):GOTO:wizard
+	Q(2.1):GOTO:wizard
+A[javascript:load_content('https://colarusso.github.io/crash-course/slides/start.html');]:Walk me through the wizard
+	Q(2.2):GOTO:wizard
 A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','wizard');]: Show me scheduled Zoom trainings
 
 Q(wizard):

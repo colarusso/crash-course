@@ -1,4 +1,4 @@
-Title: Legal Innovation & Technology Lab
+Title: The LIT Lab
 Before:
 <html>
 <head>
