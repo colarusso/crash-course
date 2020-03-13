@@ -1,9 +1,13 @@
-Title: LIT Lab Interactive FAQ
+Title: Legal Innovation & Technology Lab
 Before:
 <html>
 <head>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-
+	<script>
+		if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+	  		window.location.replace("https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/prompt.txt");
+		}
+	</script>
 	<style>
 	.main_content {
 		position:absolute;
@@ -93,7 +97,7 @@ Before:
 
 <div id="hideme" class="hideme_content">
 	&nbsp;&nbsp;&nbsp;<a href="javascript:void('');" onClick="$('#page').show();$('#show').show();$('#hideme').hide();$('#qna').hide();$('#page').css({'right':'0px','border-right': 'solid 0px #000'});" style="color:#eee">HIDE NOT-A-BOT</a>
-	<span style="float:right;font-size:12px;line-height:40px;"><a href="bot.html" target="_blank"><img src="../images/Icon_External_Link.png"/></a>&nbsp;&nbsp;&nbsp;</span>
+	<span style="float:right;font-size:12px;line-height:40px;"><a href="https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/prompt.txt" target="_blank"><img src="https://colarusso.github.io/crash-course/images/Icon_External_Link.png"/></a>&nbsp;&nbsp;&nbsp;</span>
 </div><div id="qna" name="qna" class="bot_content"><iframe height="100%" width="100%" frameBorder="0" src="https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/prompt.txt"></iframe></div>
 
 <div id="show" class="showme_content">

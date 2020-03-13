@@ -43,15 +43,16 @@ body{
 }
 </style>
 <div id="icon"></div>
-<h2 align=center>LIT Lab Interactive FAQ</br></h2>
-<p>This Is Not A Chatbot. It's an evolving collect of interactive flowcharts to frequently asked questions (last updated 202-03-05 @11:05am). Choose to walk through the wizard (<b>second option below</b>), or type your question into the field below and we'll try to guess what you're looking for. Over time, the more questions folks ask the better this feature will get.</p>
+<h2 align=center>This Is Not A Chatbot</br></h2>
+<p>It's an evolving <a href="https://github.com/colarusso/crash-course/" target="_blank">collection of interactive flowcharts</a> for the LIT Lab's frequently asked questions (last updated 202-03-05 @11:05am). Type your question into the field below, and it will try to guess what you're looking for. The more questions folks ask, the better this feature will get over time.
+</p>
 After:
 <script>
 function get_label(string){
 	 answers = getNClosestAnswer(1, vectorize(string))
 	 if (answers[0][1] > 0.25) {
+	 		write_to_table(string,QLabels[answers[0][0]])
 			return QLabels[answers[0][0]]
-		  write_to_table(string,QLabels[answers[0][0]])
 	 } else {
 			alert("No answer found. Please rephrase.")
 			return "https://www.qnamarkup.net/i//?source=https://raw.githubusercontent.com/SuffolkLITLab/clio/master/qnas/index.txt"
@@ -66,8 +67,10 @@ function load_content(src) {
 <script src="https://colarusso.github.io/crash-course/js/text2label.js?v=1"></script>
 <script src="https://colarusso.github.io/crash-course/js/word2vec.js?v=1"></script>
 
-Q(homechat): What would you like to do (e.g., "How do I set up a Zoom meeting?")?
+Q(homechat): Go ahead, ask a question.
 X[javascript:loadQnA(get_label(this.innerHTML),this.innerHTML,'end','homechat');]:
+
+Q:placeholder
 A[javascript:load_content('https://colarusso.github.io/crash-course/slides/start.html');]:Walk me through the wizard
 	Q(1.2):GOTO:wizard
 A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','wizard');]: Show me scheduled Zoom trainings
