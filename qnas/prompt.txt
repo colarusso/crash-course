@@ -1,4 +1,4 @@
-Title: Zoom Crash Course
+Title: LIT Lab Interactive FAQ
 Author: <a href="https://twitter.com/SuffolkLITLab" target="_blank">Suffolk Legal Innovation & Technology Lab</a>
 Description:
 Before:
@@ -43,8 +43,8 @@ body{
 }
 </style>
 <div id="icon"></div>
-<h2 align=center>Zoom Crash Course @Suffolk_Law</br></h2>
-<p>This Is Not A Chatbot. It's an evolving collect of interactive flowcharts (last updated 202-03-05 @11:05am). Choose to walk through the wizard (<b>second option below</b>), or type your question into the field below and we'll try to guess what you're looking for (over time, the more questions folks ask the better this feature will get).</p>
+<h2 align=center>LIT Lab Interactive FAQ</br></h2>
+<p>This Is Not A Chatbot. It's an evolving collect of interactive flowcharts to frequently asked questions (last updated 202-03-05 @11:05am). Choose to walk through the wizard (<b>second option below</b>), or type your question into the field below and we'll try to guess what you're looking for. Over time, the more questions folks ask the better this feature will get.</p>
 After:<script src="../js/loadQnA.js?v=1"></script>
 <script src="../js/text2label.js?v=1"></script>
 <script src="../js/word2vec.js?v=1"></script>
@@ -53,10 +53,7 @@ Q(homechat): What would you like to do (e.g., "How do I set up a Zoom meeting?")
 X[javascript:loadQnA(get_label(this.innerHTML),this.innerHTML,'end','homechat');]:
 A: Walk me through the wizard
 	Q(1.2):GOTO:wizard
-A: Show me scheduled trainings
-	Q(1.3):GOTO:trainings
-
-Q(trainings): The ITC has set up a number of in-person trainings. See the schedule displayed to the left.
+A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','wizard');]: Show me scheduled Zoom trainings
 
 Q(wizard):
 A[javascript:loadQnA('https://www.qnamarkup.net/i/?source=https://suffolklitlab.org/clio/qnas/Closing_transfer.txt',this.innerHTML,'end','wizard');]: test
