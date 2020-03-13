@@ -94,7 +94,7 @@ Before:
 
 </div><div id="qna" name="qna" class="bot_content"><iframe height="100%" width="100%" frameBorder="0" src="https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/prompt.txt"></iframe></div>
 <div id="page" class="main_content">
-<iframe height="100%" width="100%" frameBorder="0" src="https://colarusso.github.io/crash-course/slides/start.html"></iframe>
+<iframe id="content" name="content" height="100%" width="100%" frameBorder="0" src="https://colarusso.github.io/crash-course/slides/start.html"></iframe>
 <div style="background:yellow;display:none;">null
 After:null</div>
 Q(1):
