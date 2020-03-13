@@ -51,6 +51,7 @@ function get_label(string){
 	 answers = getNClosestAnswer(1, vectorize(string))
 	 if (answers[0][1] > 0.25) {
 			return QLabels[answers[0][0]]
+		  write_to_table(string,QLabels[answers[0][0]])
 	 } else {
 			alert("No answer found. Please rephrase.")
 			return "https://www.qnamarkup.net/i//?source=https://raw.githubusercontent.com/SuffolkLITLab/clio/master/qnas/index.txt"
@@ -60,6 +61,7 @@ function load_content(src) {
 	parent.document.getElementById('main_window').src = src
 }
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
 <script src="https://colarusso.github.io/crash-course/js/loadQnA.js?v=1"></script>
 <script src="https://colarusso.github.io/crash-course/js/text2label.js?v=1"></script>
 <script src="https://colarusso.github.io/crash-course/js/word2vec.js?v=1"></script>
