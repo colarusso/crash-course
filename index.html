@@ -1,0 +1,128 @@
+<html>
+<head>
+	<title>Crash Course</title>
+
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<link rel="apple-touch-icon" href="images/icon_300.png"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=2019-03-29">
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/scripts.js?v=2019-04-09"></script>
+
+	<!--<script>
+		if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+	  		window.location.replace("bot_4_phone.html");
+		}
+	</script>-->
+
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Crash Course"/>
+	<meta property="og:description" content="A crash course in Zoom for Law Profs"/>
+	<meta property="og:image" content=""/>
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@SuffolkLITLab">
+	<meta name="twitter:creator" content="@SuffolkLITLab">
+	<meta name="twitter:title" content="Crash Course">
+	<meta name="twitter:description" content="A crash course in Zoom for Law Profs">
+	<meta name="twitter:image" content=""/>
+
+	<style>
+	.main_content {
+		position:absolute;
+		box-sizing: border-box;
+		border-right: solid 1px #000;
+		z-index:1;
+		left:0px;
+		right:375px;
+		top:0;
+		bottom:0;
+		overflow:hidden
+	}
+	.showme_content {
+		display:none;
+		box-sizing: border-box;
+		position:absolute;
+		z-index:100;
+		right:0;
+		width:115px;
+		bottom:0;
+		height:43px;
+		background:#002e5d;
+		text-align:center;
+		color:white;
+		font-size:12px;
+		font-family:arial;
+		line-height:40px;
+		border-top-left-radius: 15px;
+	}
+	.hideme_content {
+		position:absolute;
+		box-sizing: border-box;
+		border-left: solid 1px #000;
+		z-index:2;
+		right:0;
+		width:376px;
+		top:0;
+		height:40px;
+		background:#002e5d;
+		text-align:center;
+		color:white;
+		font-size:12px;
+		font-family:arial;
+		line-height:40px;
+	}
+	.bot_content {
+		position:absolute;
+		box-sizing: border-box;
+		border-left: solid 1px #000;
+		z-index:2;
+		right:0;
+		width:376px;
+		/* Standard */
+		height: calc(100% - 40px);
+		/* Firefox */
+		height: -moz-calc(100% - 40px);
+		/* WebKit */
+		height: -webkit-calc(100% - 40px);
+		/* Opera */
+		height: -o-calc(100% - 40px);
+		top:0;
+		bottom:0;
+		overflow:auto
+	}
+
+	@media only screen and (max-width: 750px) {
+		.showme_content {
+			display:none;
+			float:left;
+		}
+		.hideme_content {
+			width:100%;
+			border-left: solid 0px #000;
+			min-width:300px;
+		}
+		.bot_content {
+			width:100%;
+			border-left: solid 0px #000;
+		}
+		.main_content {
+			border-right: solid 0px #000;
+			width:100%;
+		}
+
+	}
+	</style>
+
+</head>
+<body>
+
+</div><div id="qna" name="qna" class="bot_content"><iframe height="100%" width="100%" frameBorder="0" src="https://www.qnamarkup.net/i/?source=https://colarusso.github.io/crash-course/qnas/index.txt?v=1"></iframe></div>
+<div id="page" class="main_content">
+	<iframe height="100%" width="100%" frameBorder="0" src="slides/start.html"></iframe>
+</div>
+</body>
+</html>
