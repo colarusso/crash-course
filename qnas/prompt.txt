@@ -43,8 +43,8 @@ body{
 }
 </style>
 <div id="icon"></div>
-<h2 align=center>This Is Not A Chatbot</br></h2>
-<p>It's a <a href="https://github.com/colarusso/crash-course/" target="_blank">bunch of flowcharts</a> that answer frequently asked questions (last updated 202-03-05 @11:05am). It will guess the flowchart you need based on your question. The more questions folks ask, the better this feature will get over time.
+<h2 align=center>This Is Not A FAQ Chatbot</br></h2>
+<p>It's a <a href="https://github.com/colarusso/crash-course/" target="_blank">collection of FAQ flowcharts</a>. It matches your questions with flowcharts based on their similarity. The more questions folks ask, the better this feature gets.
 </p>
 After:
 <script>
@@ -76,7 +76,7 @@ function load_content(src) {
 <script src="https://colarusso.github.io/crash-course/js/text2label.js?v=1"></script>
 <script src="https://colarusso.github.io/crash-course/js/word2vec.js?v=1"></script>
 
-Q(homechat): Go ahead; ask a question.
+Q(homechat): Go ahead, ask a question.
 X[javascript:loadQnA(get_label(this.innerHTML),this.innerHTML,'end','homechat');]:
 Q(2):placeholder
 A[javascript:load_content('https://colarusso.github.io/crash-course/slides/start.html');]:Walk me through the wizard
