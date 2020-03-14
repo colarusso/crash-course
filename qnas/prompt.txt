@@ -44,7 +44,7 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center>This Is Not A Chatbot</br></h2>
-<p>It's a <a href="https://github.com/colarusso/crash-course/" target="_blank">collection of interactive flowcharts</a> for answering frequently asked questions (last updated 202-03-05 @11:05am). Ask your question below, and it will guess what flowchart you need. The more questions folks ask, the better this feature will get over time.
+<p>It's a <a href="https://github.com/colarusso/crash-course/" target="_blank">bunch of flowcharts</a> that answer frequently asked questions (last updated 202-03-05 @11:05am). It will guess the flowchart you need based on your question. The more questions folks ask, the better this feature will get over time.
 </p>
 After:
 <script>
@@ -60,7 +60,12 @@ function get_label(string){
 }
 function load_content(src) {
 	if ($( window ).width() > 750) {
-		parent.document.getElementById('main_window').src = src
+		try {
+			parent.document.getElementById('main_window').src = src
+		}
+		catch(err) {
+			window.open(src);
+		}
 	} else {
 		window.open(src);
 	}
